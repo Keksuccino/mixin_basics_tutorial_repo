@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "de.keksuccino.mixintest.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "MixinWidget"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "modid.mixin-refmap.json"
+}
