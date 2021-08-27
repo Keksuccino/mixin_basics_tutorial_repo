@@ -46,7 +46,7 @@ dependencies {
 
 //This is the better way to define the Mixin refmap name, you should use this instead of renaming the file in the jar section (line #69)
 mixin {
-    add sourceSets.main, "fancymenu.general.mixin-refmap.json"
+    add sourceSets.main, "modid.mixin-refmap.json"
 }
 
 jar {
