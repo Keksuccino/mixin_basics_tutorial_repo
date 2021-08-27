@@ -44,6 +44,11 @@ dependencies {
 
 }
 
+//This is the better way to define the Mixin refmap name, you should use this instead of renaming the file in the jar section (line #69)
+mixin {
+    add sourceSets.main, "fancymenu.general.mixin-refmap.json"
+}
+
 jar {
     manifest {
         attributes([
@@ -59,8 +64,9 @@ jar {
             "MixinConfigs" : "modid.mixin.json"
         ])
     }
-
-    rename 'mixin.refmap.json', 'modid.mixin-refmap.json'
+    
+    //This doesn't seem to work anymore, so you should define the correct refmap name in the mixin section (line #49) instead
+    //rename 'mixin.refmap.json', 'modid.mixin-refmap.json'
 
 }
 
